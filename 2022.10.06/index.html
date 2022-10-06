@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы</title>
+</head>
+<body>
+<!--
+    Форма обратной связи
+    Форма заказа
+    Форма регистрации / авторизации
+    Анкета / опрос / тест
+    Сообщения
+    Поиск
+    Профиль в соц-сетях
+-->
+<!--
+    method: get / post
+
+    Create  => POST
+    Read    => GET
+    Update  => PUT / PATCH
+    Delete  => DELETE
+-->
+<!--
+    атрибуты input:
+        type:
+            -text
+            -tel
+            -email
+            -password
+            -number
+            -reset - кнопка сброса данных
+            -submit - кнопка отправки формы на сервер
+            -button - программируемая кнопка для js
+        name - как данные передаются на сервер
+        value - значение данных, передаваемых на сервер (значение по умолчанию)
+        placeholder - подсказка для пользователя
+        pattern - регулярное выражение для заполнения формы (js)
+        min - минимальное число (д / числовых данных)
+        max - максимальное число (д / числовых данных)
+-->
+<form action="" method="get">
+    <table>
+        <tr>
+            <td>Введите имя</td>
+            <td><input type="text" name="user" placeholder="Игорь"></td>
+        </tr>
+        <tr>
+            <td>Введите электронный адрес</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Введите номер телефона</td>
+            <td><input type="tel" name="phone" placeholder="+7 (111) 222-33-44"></td>
+        </tr>
+        <tr>
+            <td>Введите пароль</td>
+            <td><input type="password" name="pwd"></td>
+        </tr>
+        <tr>
+            <td>Введите ваш город</td>
+            <td><input type="text" name="city" value="Мурманск" placeholder="Москва"></td>
+        </tr>
+        <tr>
+            <td>Количество</td>
+            <td><input type="number" name="quantity" value="1" max="10" min="0"></td>
+        </tr>
+        <tr>
+            <td>Вкусняшки</td>
+            <td>
+                <input type="range" value="3" min="1" max="7">
+                <input type="color" value="#ff0000">
+                <input type="month">
+                <input type="date" value="2023-05-01">
+<!--                <input type="number">-->
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Купить обнимашки"></td>
+        </tr>
+    </table>
+<!--
+    table>tr*7>td+td>input
+    file:///C:/Users/User/Documents/2dev2/2022.10.06/index.html?user=Alisa&email=123%40123.com&phone=1223456789&pwd=12345&city=Иваново&quantity=2
+-->
+</form>
+</body>
+</html>
