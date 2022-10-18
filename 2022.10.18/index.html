@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>
+        body {
+            color: rgb(135,69,228);
+            background-color: grey;
+            background-image: url("https://cdn.custom-cursor.com/cursors/pack2195.png");
+            background-repeat: no-repeat; /* repeat / repeat-x / repeat-y / no-repeat */
+            background-position: 100px 300px; /* x y */
+            background-position: right bottom; /* top left right bottom center */
+            background-position: center;
+            background-attachment: fixed; /* scroll / fixed */
+            background-size: 200px 200px;
+            background-size: auto 200px;
+            background-size: contain; /* вписать в размеры тега */
+            background-size: cover; /* заполнить картинкой весь тег */
+        }
+        /*
+
+        1байт = 8бит
+
+        00000000 = 0            #00
+        00000001 = 1
+        00000010 = 2
+        00000011 = 3
+        00001111 = 15
+        00011111 = 31
+        01000000 = 64
+        01010101
+        11100000
+        01111111 = 127
+        11111111 = 255          #ff
+
+
+
+        Red     Green   Blue    (RGB)
+        1байт   1байт   1байт           => 2^24 ~16 млн
+        0-255   0-255   0-255
+        255     255     255     white   #ffffff
+        0       0       0       black   #000000
+        255     0       0       red     #ff0000
+        0       0       255     blue    #0000ff
+        0       255     0       lime    #00ff00
+        0       127     0       green   #008000
+
+        CMYK
+        0       255     255     aqua / cyan
+        255     0       255     magenta
+        255     255     0       yellow
+
+        #d23efa HEX
+
+
+        DEC
+        00  01  02  03  04  05  06  07  08  09
+        10  11  12  13  14  15  16  17  18  19
+        20  21  22  ...
+        ...
+        90  91  92  93  94  95  96  97  98  99
+
+        HEX
+        00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f - 15
+        10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f - 31
+        20 21 22 23 24 25 26 27 28 29 2a 2b 2c 22 2e 2f - 47
+        ...
+        f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 fa fb fc fd fe ff - 255
+        */
+    </style>
+</head>
+<body>
+<!-- (h1>lorem3)+div*3>(h2>lorem5)+p*3>lorem100 -->
+    <h1>Lorem ipsum dolor.</h1>
+    <div>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias, aperiam aut commodi consequatur debitis, deserunt eaque eius eum eveniet hic illo in itaque laborum minima minus nihil nisi nostrum odit officiis optio perspiciatis porro quae quo repellendus veniam vitae. A adipisci alias aliquam aspernatur at blanditiis delectus eaque earum est eum, hic, illo illum molestiae nam natus officiis placeat, quidem velit voluptas voluptatibus! Commodi distinctio eius error in, nihil placeat quasi veniam? Ab exercitationem fuga fugit, libero nesciunt optio quibusdam. Accusantium commodi eius eligendi laudantium minima molestiae odio quibusdam sed sunt, suscipit. A deserunt expedita hic impedit, maiores optio!</p>
+        <p>Ab consequuntur cupiditate, et excepturi, facilis fugiat incidunt laboriosam maxime nihil omnis quisquam reprehenderit sequi soluta sunt tempore, voluptate voluptatibus. Error velit, voluptatum. Ab at culpa dicta ducimus earum, excepturi, exercitationem impedit inventore itaque maiores molestias, mollitia numquam odio perferendis porro quibusdam quis quisquam sequi sit velit. Ab, adipisci amet animi at consectetur corporis cum cupiditate doloribus eaque eius error est et ex explicabo impedit in incidunt itaque maiores modi molestias natus non nostrum odit perspiciatis quae quaerat quisquam quo ratione recusandae repellendus sapiente similique tempore tenetur ullam ut vel voluptates. Accusantium alias commodi dolore fugit impedit laboriosam sunt vel?</p>
+        <p>Amet autem beatae commodi, consequatur culpa cum delectus deserunt dolores dolorum ducimus ea error esse exercitationem expedita explicabo harum iste natus odio optio quasi recusandae sequi sint sit temporibus ut. Accusantium animi aperiam aut dolorem eum fugiat illum neque optio, quod recusandae similique sunt tempora veniam vero voluptatum. Aliquam atque beatae cumque dolorem doloremque eum facere itaque magnam nam necessitatibus nesciunt, nisi porro quam rem sequi tenetur, vel voluptates! Aliquam amet aspernatur consectetur culpa cumque cupiditate debitis dicta, dolor dolore dolores ea eaque error eum facilis fugit id inventore ipsam iusto laudantium neque nisi nulla quod, ratione reiciendis voluptate voluptates?</p>
+    </div>
+    <div>
+        <h2>Doloremque eius laboriosam odit ullam!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium illo iste iure magni minus odit totam. Aspernatur delectus dolorem eius hic possimus reprehenderit sint voluptates. Beatae cum dolore, eius esse et exercitationem laudantium molestiae nemo non odit optio perspiciatis qui quod sed vitae voluptas voluptatem? Cupiditate dolore id ipsam, maxime obcaecati quae quidem sapiente tenetur! Aliquid labore magnam maxime. Aut, iste nesciunt. Alias aliquid consectetur corporis cupiditate dignissimos dolor dolorem eaque eum labore nesciunt, nobis odit possimus quasi quo sed temporibus ullam unde veritatis! Aut doloremque earum eos excepturi ipsam? Architecto doloribus est eum excepturi expedita fugit id, repellat sapiente.</p>
+        <p>Cum, cumque deleniti dolor facilis illo ipsum iste magni nisi nobis officia officiis perferendis, porro possimus quidem quo quod rem similique temporibus, veniam voluptatibus. Animi aperiam assumenda, aut consequatur cum cumque distinctio dolores eaque eius id impedit inventore itaque, laborum magnam magni maiores necessitatibus obcaecati pariatur perspiciatis praesentium quam quibusdam repellat, sit velit vero voluptas voluptate! Ab dignissimos, eius ipsam quisquam ratione tenetur voluptate. A ad animi illum natus necessitatibus possimus quis quod saepe tempora veritatis. At consequatur culpa ducimus itaque mollitia, nostrum pariatur placeat qui quisquam rem tempore voluptatibus! Doloribus ducimus eos facere maxime nisi officiis totam, ullam voluptatum?</p>
+        <p>A ad consequatur, corporis deserunt, eligendi expedita illum laudantium mollitia necessitatibus nihil nulla officia omnis, tenetur? Animi debitis dolorum eaque est, explicabo facilis hic, ipsum minus necessitatibus, provident quidem quo vel voluptatum. A aliquam assumenda ipsa libero maxime mollitia nihil, omnis perferendis, quas quod quos reprehenderit temporibus. Esse facere impedit in itaque molestias non velit voluptate! Consequatur deleniti deserunt dolor dolorem eos facere itaque maxime nostrum nulla quibusdam quos similique ullam, voluptate. Animi cumque dolor eum ipsam laborum nisi numquam odit optio quod quos sapiente, sint. Aut culpa dolores dolorum est excepturi exercitationem ipsum, laudantium nihil officiis porro, temporibus voluptatem.</p>
+    </div>
+    <div>
+        <h2>Cum inventore optio quisquam repellat!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores consectetur ducimus eos ipsa magnam minus sint sunt ullam. Accusantium animi blanditiis dicta dolor doloribus ducimus eaque eius eligendi esse et hic illo in ipsa ipsum itaque iure laboriosam nam necessitatibus, nesciunt numquam officia perspiciatis porro, praesentium quae quasi quia quibusdam ratione similique sit totam unde veniam vitae voluptate! Adipisci animi debitis delectus, eaque eius error, esse in itaque laboriosam magnam placeat quasi quidem sed sunt tenetur. Accusamus adipisci autem culpa dolor dolore, dolorum excepturi explicabo id iusto nihil nisi odio officia quia repellendus, temporibus totam ut velit vitae voluptatum.</p>
+        <p>Aperiam consectetur cum debitis dolore dolorem est et ex fuga fugiat illum incidunt ipsa iste iure laudantium libero magnam minima minus modi nulla, obcaecati omnis perferendis possimus quae quam quisquam quos ratione recusandae repellat repellendus reprehenderit rerum tempore temporibus, vel voluptas voluptatem voluptatibus voluptatum? Fugit magnam nihil saepe? Cupiditate distinctio eveniet ex fugit neque placeat sapiente tempore. Accusamus aliquid amet aperiam aspernatur consectetur debitis delectus dicta eaque eius esse et facere facilis fugit in incidunt minima mollitia necessitatibus nostrum odit perferendis quisquam quo repellendus repudiandae vel, voluptate voluptates voluptatum! A aspernatur consequuntur earum eveniet fuga harum magnam magni nulla unde.</p>
+        <p>Adipisci dignissimos ducimus, error expedita illo laboriosam laborum nesciunt odio quam reprehenderit sapiente sequi voluptas voluptatibus. Consequatur exercitationem impedit magni officiis quasi ratione recusandae rem sequi temporibus velit. Eum nihil nostrum similique tempore voluptatem voluptatum? A aliquam aperiam cum dolorem dolorum eius expedita explicabo hic impedit ipsum, magnam molestiae mollitia optio perspiciatis quis repudiandae sit tenetur voluptas? Amet architecto, autem culpa dolore esse eum, ex iste modi nobis quo quod rerum, soluta totam vitae voluptate! Cum deleniti laudantium officia quidem repudiandae, vitae. Aperiam distinctio dolor magni neque nobis non, quam ratione reiciendis repellat vitae? Est harum repellendus sint sit suscipit?</p>
+    </div>
+</body>
+</html>
