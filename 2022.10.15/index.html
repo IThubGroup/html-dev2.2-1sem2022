@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы</title>
+    <style>
+        /*селектор {правило1: значение; правило2: значение}*/
+
+        /*худи {*/
+        /*    размер: s;*/
+        /*    цвет: black;*/
+        /*    карманы: 2;*/
+        /*    молния: false;*/
+        /*    принт: картинка;*/
+        /*}*/
+        td {
+            color: black;
+        }
+        legend {
+            text-align: center;
+        }
+        #students td, #students th {
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+<!--
+    Форма обратной связи
+    Форма заказа
+    Форма регистрации / авторизации
+    Анкета / опрос / тест
+    Сообщения
+    Поиск
+    Профиль в соц-сетях
+-->
+<!--
+    method: get / post
+
+    Create  => POST
+    Read    => GET
+    Update  => PUT / PATCH
+    Delete  => DELETE
+-->
+<!--
+    атрибуты input:
+        type:
+            -text
+            -tel
+            -email
+            -password
+            -number
+            -reset - кнопка сброса данных
+            -submit - кнопка отправки формы на сервер
+            -button - программируемая кнопка для js
+        name - как данные передаются на сервер
+        value - значение данных, передаваемых на сервер (значение по умолчанию)
+        placeholder - подсказка для пользователя
+        pattern - регулярное выражение для заполнения формы (js)
+        min - минимальное число (д / числовых данных)
+        max - максимальное число (д / числовых данных)
+        max - максимальное число (д / числовых данных)
+-->
+<table id="students"> <!-- РАЗОВАЯ АКЦИЯ!!!!!!!!!!!!!!!!! -->
+    <caption>Таблица успеваемости</caption>
+    <tr>
+        <th rowspan="2">Фамилия</th>
+        <th rowspan="2">Имя</th>
+        <th colspan="4">Четверть</th>
+    </tr>
+    <tr>
+        <th>I</th>
+        <th>II</th>
+
+        <th>III</th>
+        <th>IV</th>
+    </tr>
+    <tr>
+        <td>Совухин</td>
+        <td><mark>Андрей</mark></td>
+        <td>4</td>
+        <td>5</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>Петрова</td>
+        <td>Мария</td>
+        <td>5</td>
+        <td>4</td>
+        <td>2</td>
+        <td>5</td>
+    </tr>
+</table>
+<hr>
+<form action="" method="get">
+    <table>
+        <tr>
+            <td><label for="inp1">Введите имя</label></td>
+            <td><input id="inp1" type="text" name="user" placeholder="Игорь"></td>
+        </tr>
+        <tr>
+            <td>Введите электронный адрес</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Введите номер телефона</td>
+            <td><input type="tel" name="phone" placeholder="+7 (111) 222-33-44"></td>
+        </tr>
+        <tr>
+            <td>Введите пароль</td>
+            <td><input type="password" name="pwd"></td>
+        </tr>
+        <tr>
+            <td>Введите ваш город</td>
+            <td>
+<!--                <input type="text" name="city" value="Мурманск" placeholder="Москва">-->
+                <select name="city">
+                    <option>Мурманск</option>
+                    <option>Москва</option>
+<!--                    <option>Комсомольск-на-Амуре</option>-->
+                    <option>Воронеж</option>
+                    <option>Ярославль</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Выберите день</td>
+            <td>
+                <select name="day">
+                    <optgroup label="Будни">
+                        <option value="mn">Понедельник</option>
+                        <option value="tu">Вторник</option>
+                        <option value="we">Среда</option>
+                        <option value="th">Четверг</option>
+                        <option value="fr">Пятница</option>
+                    </optgroup>
+                    <optgroup label="Выходные">
+                        <option value="st">Суббота</option>
+                        <option value="sn">Воскресенье</option>
+                    </optgroup>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Количество</td>
+            <td><input type="number" name="quantity" value="1" max="10" min="0"></td>
+        </tr>
+        <tr>
+            <td>Вкусняшки</td>
+            <td>
+                <input type="range" value="3" min="1" max="7">
+                <input type="color" value="#ff0000">
+                <input type="month">
+                <input type="date" value="2023-05-01">
+<!--                <input type="number">-->
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Купить обнимашки"></td>
+        </tr>
+    </table>
+    <fieldset>
+        <legend>Выберите пол</legend>
+        <label><input type="radio" name="gender" value="m" checked> male</label>
+        <label><input type="radio" name="gender" value="f"> female</label>
+    </fieldset>
+    <fieldset>
+        <legend>Выберите предпочитаемый цвет</legend>
+        <div><input type="radio" name="color" value="black"> Черный</div>
+        <div><input type="radio" name="color" value="red"> Красный</div>
+        <div><input type="radio" name="color" value="orange"> Оранжевый</div>
+        <div><input type="radio" name="color" value="yellow"> Желтый</div>
+        <div><input type="radio" name="color" value="lime"> Зеленый</div>
+        <div><input type="radio" name="color" value="cyan"> Бирюзовый</div>
+        <div><input type="radio" name="color" value="blue"> Синий</div>
+        <div><input type="radio" name="color" value="violet"> Фиолетовый</div>
+        <div><input type="radio" name="color" value="pink"> Розовый</div>
+        <div><input type="radio" name="color" value="white"> Белый</div>
+    </fieldset>
+    <fieldset>
+        <legend>FFF</legend>
+    <!--    div*3>label>input-->
+        <div>
+            <label><input type="checkbox" name="agreement"> Я согласен на обработку персональных данных</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="read"> Я ознакомлен с лицензионным соглашением</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="fun" checked> Я согласен получать информационную рассылку на свою почту</label>
+        </div>
+    </fieldset>
+    <p>Дополнительно</p>
+    <textarea name="message" placeholder="Напишите комментарий к заказу" cols="50" rows="10"></textarea>
+</form>
+
+</body>
+</html>
