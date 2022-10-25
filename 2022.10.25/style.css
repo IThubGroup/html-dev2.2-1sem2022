@@ -1,0 +1,24 @@
+.box {
+    background-color: #004848;
+    color: cyan;
+    width: 200px;
+    height: 200px;
+    /*min-height: 200px;*/
+    /*max-height: 250px;*/
+    overflow: auto; /* visible / hidden / scroll / auto */
+    border-style: dotted; /* none / solid / double / dashed / dotted */
+    border-width: 10px;
+    border-color: crimson;
+    border: 5px dotted lightblue;
+    border-bottom-color: crimson;
+    border-left: 5px solid blueviolet;
+    padding: 20px; /*для всех сторон*/
+    padding: 20px 0 100px 50px; /* top right bottom left */
+    padding: 20px 50px; /* y x */
+    padding: 20px 50px 50px; /* top x bottom */
+    margin: 50px 0 20px;
+
+}
+.dark {
+    background-color: #222;
+}

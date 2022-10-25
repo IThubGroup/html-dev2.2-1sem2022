@@ -1,0 +1,16 @@
+body {
+    background-color: bisque;
+    color: blueviolet;
+}
+h1 {
+    font-family: Impact, fantasy;
+    text-align: center;
+    color: crimson;
+}
+nav {
+    text-align: right;
+}
+a {
+    color: crimson;
+    font-size: 30px;
+}
