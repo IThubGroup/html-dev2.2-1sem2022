@@ -1,0 +1,76 @@
+.box {
+    /*background: navy;*/
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    /*overflow: hidden;*/
+    /*
+        flex-direction - направление основной оси
+            row - x
+            row-reverse
+            column
+            column-reverse
+    */
+    flex-direction: row;
+    /*
+        justify-content - выравнивание элементов вдоль основной оси
+            flex-start
+            flex-end
+            center
+            space-around
+            space-between
+
+     */
+    justify-content: center;
+    /*
+        align-items - выравнивание элементов вдоль перпендикулярной оси
+            stretch
+            flex-start
+            flex-end
+            center
+
+     */
+    align-items: center;
+    /*
+        flex-wrap - разделить контент на несколько строк
+            nowrap
+            wrap
+            wrap-reverse
+    */
+    flex-wrap: wrap;
+
+    /*
+        align-content - выравнивание строк вдоль перпендикулярной оси
+            stretch
+            flex-start
+            flex-end
+            center
+            space-around
+            space-between
+        Работает только когда больше одной строки (flex-wrap - wrap)
+    */
+    align-content: space-between;
+    gap: 20px; /* y x */
+}
+.item {
+    background: cornflowerblue;
+    font-family: monospace;
+    font-size: 24px;
+    padding: 10px 14px;
+    width: calc(25% - 43px);
+    text-align: center;
+}
+/*.first {*/
+/*    background: cornsilk;*/
+/*}*/
+/*.second {*/
+/*    background: lightblue;*/
+/*}*/
+
+/*
+    display - отображение
+        block
+        inline
+        inline-block
+        flex (~7 правил)
+*/
