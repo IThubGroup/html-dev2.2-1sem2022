@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f3f0f0;
+}
+a {
+    text-decoration: none;
+    color: inherit; /* унаследовать */
+}
+h1, h2, h3, p {
+    margin: 0;
+    text-align: center;
+}
+h1 {
+    font-size: 80px;
+}
+
+footer {
+    height: 70px;
+    background-image: url(img/footer.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.banner {
+    background-image: url(img/banner.jpg);
+    padding: 70px;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    color: white;
+    text-shadow: 0 0 15px blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info {
+    padding: 30px 0;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.card {
+    width: 25%;
+    padding: 2%;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.btn {
+    background-color: blueviolet;
+    color: white;
+    display: block;
+    padding: 6px 12px;
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.logo img {
+    height: 70px;
+}
+nav {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
